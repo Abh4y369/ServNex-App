@@ -1,0 +1,83 @@
+.service-card {
+  background: white;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 0.5px solid rgba(93, 93, 93, 0);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.208);
+  /* border: 0.5px solid rgba(93, 93, 93, 0); */
+}
+
+.coming-card {
+  background: white;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 0.5px solid rgba(93, 93, 93, 0);
+}
+
+.coming-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.208);
+  /* border: 0.5px solid rgba(93, 93, 93, 0); */
+}
+.coming-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.coming-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Ribbon */
+.coming-ribbon {
+  position: absolute;
+  top: 20px;
+  right: -60px;
+  width: 240px;
+  height: 40px;
+  background: linear-gradient(135deg, #00ff15, #ffcc00);
+  transform: rotate(45deg);
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  z-index: 10;
+
+  /* center content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* moving text wrapper */
+.ribbon-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation: ribbon-scroll 6s linear infinite;
+}
+
+/* text */
+.ribbon-track span {
+  white-space: nowrap;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-right: 20px;
+  line-height: 1;
+}
+
+
+@keyframes ribbon-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
